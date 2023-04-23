@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header" id="header">
+        <h1 class="header__main-title">Color Game<br>The Great <span id="color__display">RGB</span> Guessing Game</h1>
+    </header>
+
+    <main class="main">
+
+        <div class="main__control row">
+                <button class="btn" id="reset">New Colors</button>
+                <span class="btn btn-message" id="message"></span>
+            <div class="inline">
+                <button class="btn" id="mode">Easy</button>
+		        <button class="btn selected" id="mode">Hard</button>
+            </div>
+        </div>
+
+        <div class="container grid">
+            <div class="square" id="square"></div>
+            <div class="square" id="square"></div>
+            <div class="square" id="square"></div>
+            <div class="square" id="square"></div>
+            <div class="square" id="square"></div>
+            <div class="square" id="square"></div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">Copyright <span id="currYear"></span> by Leonardo Gasali</p>
+        </div>
+    </footer>
+    
+    <!-- Script -->
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
